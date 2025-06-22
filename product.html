@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone X Pro - Your Awesome Store</title>
+    <link rel="stylesheet" href="style/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/100x50?text=Your+Logo" alt="Website Logo" class="website-logo">
+            <h1 class="website-name">Your Awesome Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Shop by Category <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products.html#food">Food</a>
+                        <a href="products.html#beverages">Beverages</a>
+                        <a href="products.html#household">Household</a>
+                        <a href="products.html#personal-care">Personal Care</a>
+                    </div>
+                </li>
+                <li><a href="my-orders.html">My Orders</a></li>
+                <li><a href="index.html#products">Products</a></li> <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html#shopping-cart-section">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-page-main">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="index.html#products">Products</a> &gt; Smartphone X Pro
+        </div>
+
+        <section class="product-details-section">
+            <div class="product-image-gallery">
+                <div class="main-image">
+                    <img id="mainProductImage" src="https://via.placeholder.com/600x400?text=Smartphone+X+Pro+Front" alt="Smartphone X Pro Front View">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="https://via.placeholder.com/100x70?text=Side" alt="Smartphone Side View" data-full-image="https://via.placeholder.com/600x400?text=Smartphone+X+Pro+Side">
+                    <img src="https://via.placeholder.com/100x70?text=Back" alt="Smartphone Back View" data-full-image="https://via.placeholder.com/600x400?text=Smartphone+X+Pro+Back">
+                    <img src="https://via.placeholder.com/100x70?text=Screen" alt="Smartphone Screen Detail" data-full-image="https://via.placeholder.com/600x400?text=Smartphone+X+Pro+Screen">
+                    <img src="https://via.placeholder.com/100x70?text=Box" alt="Smartphone Box" data-full-image="https://via.placeholder.com/600x400?text=Smartphone+X+Pro+Box">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title">Smartphone X Pro (256GB, Midnight Black)</h1>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> (4.0 out of 5 stars - 128 Reviews)
+                </div>
+
+                <div class="product-price">
+                    <span class="current-price">EGP 8,999</span>
+                    <span class="old-price">EGP 12,000</span>
+                    <span class="discount-badge">SAVE 25%</span>
+                </div>
+
+                <p class="availability">Availability: <span class="in-stock">In Stock</span> (Ships in 1-2 business days)</p>
+
+                <div class="product-options">
+                    <div class="option-group">
+                        <label for="color-select">Color:</label>
+                        <select id="color-select" name="color">
+                            <option value="midnight-black">Midnight Black</option>
+                            <option value="starlight-silver">Starlight Silver</option>
+                            <option value="pacific-blue">Pacific Blue</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label for="storage-select">Storage:</label>
+                        <select id="storage-select" name="storage">
+                            <option value="128gb">128GB</option>
+                            <option value="256gb" selected>256GB</option>
+                            <option value="512gb">512GB</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <button class="btn btn-add-to-cart large-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    <button class="btn btn-primary large-btn"><i class="fas fa-bolt"></i> Buy Now</button>
+                </div>
+
+                <div class="guarantees">
+                    <p><i class="fas fa-truck"></i> Free Shipping on orders over EGP 500</p>
+                    <p><i class="fas fa-undo-alt"></i> 30-Day Easy Returns</p>
+                    <p><i class="fas fa-shield-alt"></i> 1-Year Manufacturer Warranty</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-description-specs">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="description">Description</button>
+                <button class="tab-button" data-tab="specifications">Specifications</button>
+                <button class="tab-button" data-tab="reviews">Reviews</button>
+            </div>
+            <div class="tab-content" id="description">
+                <h3>Product Overview</h3>
+                <p>Experience the next generation of mobile technology with the Smartphone X Pro. Boasting an ultra-fast A15 Bionic chip, a stunning ProMotion XDR display, and an advanced triple-camera system, this phone is designed for professionals and enthusiasts alike. Capture breathtaking photos and videos, enjoy lightning-fast app performance, and immerse yourself in your favorite content with unparalleled clarity and responsiveness.</p>
+                <p>Designed with durability in mind, the Smartphone X Pro features Ceramic Shield front cover, making it tougher than any smartphone glass. Its sleek, elegant design fits perfectly in your hand, while its long-lasting battery ensures you stay powered throughout your day.</p>
+            </div>
+            <div class="tab-content hidden" id="specifications">
+                <h3>Technical Specifications</h3>
+                <ul>
+                    <li>**Display:** 6.7-inch Super Retina XDR display with ProMotion technology</li>
+                    <li>**Processor:** A15 Bionic chip with 6-core CPU and 5-core GPU</li>
+                    <li>**Storage Options:** 128GB, 256GB, 512GB, 1TB</li>
+                    <li>**Cameras:** Pro 12MP camera system (Telephoto, Wide, Ultra Wide); LiDAR Scanner; 12MP TrueDepth front camera</li>
+                    <li>**Battery Life:** Up to 28 hours video playback</li>
+                    <li>**Operating System:** iOS (latest version)</li>
+                    <li>**Connectivity:** 5G capable, Wi-Fi 6, Bluetooth 5.0</li>
+                    <li>**Water Resistance:** IP68 (up to 6 meters for 30 minutes)</li>
+                    <li>**Dimensions:** 160.8 x 78.1 x 7.65 mm</li>
+                    <li>**Weight:** 240 grams</li>
+                </ul>
+            </div>
+            <div class="tab-content hidden" id="reviews">
+                <h3>Customer Reviews (128)</h3>
+                <div class="review-summary">
+                    <p>Overall Rating: <span class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0</span></p>
+                    <button class="btn btn-primary">Write a Review</button>
+                </div>
+                <div class="customer-reviews">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">Ahmed M.</span>
+                            <span class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            <span class="review-date">June 10, 2025</span>
+                        </div>
+                        <p class="review-title">"Absolutely amazing phone!"</p>
+                        <p class="review-body">I upgraded from an older model and the difference is night and day. The camera is phenomenal, and the battery lasts all day. Highly recommend!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">Fatima K.</span>
+                            <span class="review-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                            <span class="review-date">May 28, 2025</span>
+                        </div>
+                        <p class="review-title">"Great phone, minor issues"</p>
+                        <p class="review-body">The screen is beautiful and it's super fast. My only small complaint is that it's a bit heavier than I expected. Otherwise, very happy!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products-section">
+            <h2>You Might Also Like</h2>
+            <div class="related-products-grid product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Bluetooth+Earbuds" alt="Bluetooth Earbuds">
+                    <h3>Super Bass Earbuds</h3>
+                    <p class="product-price">EGP 850</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Phone+Case" alt="Protective Phone Case">
+                    <h3>Ultra-Durable Case</h3>
+                    <p class="product-price">EGP 250</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Power+Bank" alt="Portable Power Bank">
+                    <h3>20000mAh Power Bank</h3>
+                    <p class="product-price">EGP 600</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Awesome Store. All rights reserved.</p>
+        <p id="contact">Contact Us: info@yourawesomestore.com</p>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/your-page" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com/your-profile" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/your-profile" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.pinterest.com/your-profile" target="_blank" aria-label="Pinterest">
+                <i class="fab fa-pinterest"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>

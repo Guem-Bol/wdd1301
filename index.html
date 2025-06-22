@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Awesome Store</title>
+    <link rel="stylesheet" href="style/MDTrade.css">
+    <script src="javascript/md.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="photos/md2.PNG" alt="Website Logo" class="website-logo">
+            <h1 class="website-name">MDTrade Supermarket</h1>
+        </div>
+        
+    </header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="deals.html">Deals</a></li> <li class="dropdown">
+            <a href="#" class="dropbtn">Shop by Category <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="products.html#food">Food</a>
+                <a href="products.html#beverages">Beverages</a>
+                <a href="products.html#household">Household</a>
+                <a href="products.html#personal-care">Personal Care</a>
+            </div>
+        </li>
+        <li><a href="my-orders.html">My Orders</a></li> <li><a href="index.html#products">Products</a></li> <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html#shopping-cart-section">Cart</a></li>
+    </ul>
+</nav>
+    <section class="category-showcase">
+    <h2>Explore Our Departments</h2>
+    <div class="category-grid">
+        <a href="deals.html" class="category-card">
+            <i class="fas fa-tags icon-large"></i>
+            <h3>Deals</h3>
+            <p>Don't miss out on our limited-time offers!</p>
+        </a>
+        <a href="products.html#food" class="category-card">
+            <i class="fas fa-apple-alt icon-large"></i>
+            <h3>Food</h3>
+            <p>Fresh groceries, snacks, and pantry staples.</p>
+        </a>
+        <a href="products.html#beverages" class="category-card">
+            <i class="fas fa-coffee icon-large"></i>
+            <h3>Beverages</h3>
+            <p>Coffee, tea, juices, and refreshing drinks.</p>
+        </a>
+        <a href="products.html#household" class="category-card">
+            <i class="fas fa-broom icon-large"></i>
+            <h3>Household</h3>
+            <p>Essentials for a clean and organized home.</p>
+        </a>
+        <a href="products.html#personal-care" class="category-card">
+            <i class="fas fa-brush icon-large"></i>
+            <h3>Personal Care</h3>
+            <p>Health, beauty, and wellness products.</p>
+        </a>
+        <a href="my-orders.html" class="category-card special-card">
+            <i class="fas fa-receipt icon-large"></i>
+            <h3>My Orders</h3>
+            <p>Track your past and current purchases.</p>
+        </a>
+    </div>
+</section>
+
+    <main>
+        <section class="hero">
+            <h2>Discover Your Next Favorite Thing!</h2>
+            <p>Welcome to Your Awesome Store, where quality meets affordability. We handpick every item to ensure you get the best.</p>
+            <p>Explore our diverse range of products, from electronics to handmade crafts. There's something for everyone.</p>
+            <p>Don't miss out on our limited-time offers and exclusive deals. Start shopping today!</p>
+        </section>
+
+        <section class="info-section" id="about">
+            <h2>Unmatched Quality & Service</h2>
+            <p>We are committed to providing you with products that exceed your expectations. Our rigorous quality checks ensure every item is perfect.</p>
+            <p>Our dedicated customer service team is always ready to assist you with any queries or concerns. Your satisfaction is our top priority.</p>
+            <p>Experience seamless shopping with fast delivery and easy returns. We make online shopping a breeze.</p>
+        </section>
+
+        <section class="info-section">
+            <h2>Curated Collections Just For You</h2>
+            <p>Dive into our specially curated collections designed to match your unique tastes and preferences.</p>
+            <p>Whether you're looking for the latest tech gadgets or unique gifts, our collections make finding what you need simple and enjoyable.</p>
+            <p>Stay tuned for new arrivals and exciting collaborations. We're constantly updating our inventory to bring you the best.</p>
+        </section>
+
+        <section class="product-grid" id="products">
+            <h2>Our Amazing Products</h2>
+
+            <div class="product-item" data-id="p001" data-name="Smartphone X" data-price="599.99">
+                <img src="photos/smartphonex.webp" alt="Smartphone X">
+                <h3>Smartphone X</h3>
+                <p class="price">$599.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+                
+            </div>
+            <div class="product-item" data-id="p002" data-name="Wireless Earbuds" data-price="129.99">
+                <img src="photos/earbuds.webp" alt="Wireless Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p class="price">$129.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p003" data-name="Smartwatch Pro" data-price="249.99">
+                <img src="photos/smartwatch.webp" alt="Smartwatch Pro">
+                <h3>Smartwatch Pro</h3>
+                <p class="price">$249.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p004" data-name="Laptop Ultra" data-price="1199.99">
+                <img src="photos/laptop.webp" alt="Laptop Ultra">
+                <h3>Laptop Ultra</h3>
+                <p class="price">$1199.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p005" data-name="Gaming Keyboard" data-price="89.99">
+                <img src="photos/gaming.jpg" alt="Gaming Keyboard">
+                <h3>Gaming Keyboard</h3>
+                <p class="price">$89.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p006" data-name="HD Monitor" data-price="199.99">
+                <img src="photos/hd.jpg" alt="HD Monitor">
+                <h3>HD Monitor</h3>
+                <p class="price">$199.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p007" data-name="Portable Speaker" data-price="79.99">
+                <img src="photos/portable.jpg" alt="Portable Speaker">
+                <h3>Portable Speaker</h3>
+                <p class="price">$79.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p008" data-name="Fitness Tracker" data-price="69.99">
+                <img src="photos/fitness.jpg" alt="Fitness Tracker">
+                <h3>Fitness Tracker</h3>
+                <p class="price">$69.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p009" data-name="Noise Cancelling Headphones" data-price="159.99">
+                <img src="photos/noise-cancelling-headphone-2048px-0876.jpg" alt="Noise Cancelling Headphones">
+                <h3>Noise Cancelling Headphones</h3>
+                <p class="price">$159.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p010" data-name="External Hard Drive" data-price="119.99">
+                <img src="200x200?text=Product+10" alt="External Hard Drive">
+                <h3>External Hard Drive</h3>
+                <p class="price">$119.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p011" data-name="USB-C Hub" data-price="39.99">
+                <img src="https://via.placeholder.com="200x200?text=Product+11" alt="USB-C Hub">
+                <h3>USB-C Hub</h3>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p012" data-name="Webcam 1080p" data-price="49.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+12" alt="Webcam 1080p">
+                <h3>Webcam 1080p</h3>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p013" data-name="Gaming Mouse" data-price="34.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+13" alt="Gaming Mouse">
+                <h3>Gaming Mouse</h3>
+                <p class="price">$34.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p014" data-name="Smart Plug Set" data-price="29.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+14" alt="Smart Plug Set">
+                <h3>Smart Plug Set</h3>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p015" data-name="E-Reader" data-price="99.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+15" alt="E-Reader">
+                <h3>E-Reader</h3>
+                <p class="price">$99.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p016" data-name="Drone Mini" data-price="299.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+16" alt="Drone Mini">
+                <h3>Drone Mini</h3>
+                <p class="price">$299.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p017" data-name="Action Camera" data-price="179.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+17" alt="Action Camera">
+                <h3>Action Camera</h3>
+                <p class="price">$179.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p018" data-name="Portable Projector" data-price="349.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+18" alt="Portable Projector">
+                <h3>Portable Projector</h3>
+                <p class="price">$349.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p019" data-name="Robot Vacuum" data-price="399.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+19" alt="Robot Vacuum">
+                <h3>Robot Vacuum</h3>
+                <p class="price">$399.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p020" data-name="Air Purifier" data-price="149.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+20" alt="Air Purifier">
+                <h3>Air Purifier</h3>
+                <p class="price">$149.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="p021" data-name="Digital Photo Frame" data-price="79.99">
+                <img src="https://via.placeholder.com/200x200?text=Product+21" alt="Digital Photo Frame">
+                <h3>Digital Photo Frame</h3>
+                <p class="price">$79.99</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="shopping-cart-section" id="shopping-cart-section">
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <p class="empty-cart-message">Your cart is empty.</p>
+            </div>
+            <div class="cart-summary">
+                <p>Total Items: <span id="total-items-count">0</span></p>
+                <p>Subtotal: $<span id="cart-subtotal">0.00</span></p>
+                <p>Tax (10%): $<span id="cart-tax">0.00</span></p>
+                <h3>Grand Total: $<span id="cart-grand-total">0.00</span></h3>
+                <div class="cart-actions">
+                    <button id="clear-cart-btn" class="secondary-btn">Clear Cart</button>
+                    <button id="checkout-btn" class="primary-btn">Checkout & Print Receipt</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Awesome Store. All rights reserved.</p>
+        <p>MDTrade Supermarket CO.LTD.</p>
+        <p id="contact">Contact Us: jamesariath72@gmail.com</p>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/your-page" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com/your-profile" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/your-profile" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

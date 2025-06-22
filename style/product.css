@@ -1,0 +1,477 @@
+/* Add these styles to your existing style.css file */
+
+/* Product Page Specific Styles */
+.product-page-main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.breadcrumb {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.breadcrumb a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.product-details-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.product-image-gallery {
+    flex: 1; /* Allows image section to grow */
+    min-width: 300px; /* Minimum width before wrapping */
+    max-width: 550px; /* Max width for image gallery */
+}
+
+.main-image {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; /* Ensure image fits without cropping */
+    max-height: 400px; /* Limit main image height */
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow thumbnails to wrap */
+}
+
+.thumbnail-images img {
+    width: 80px; /* Fixed width for thumbnails */
+    height: 60px; /* Fixed height for thumbnails */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    object-fit: cover;
+}
+
+.thumbnail-images img:hover,
+.thumbnail-images img.active-thumbnail {
+    border-color: #3498db; /* Highlight active/hovered thumbnail */
+    transform: scale(1.05);
+}
+
+.product-info {
+    flex: 1.5; /* Allows info section to grow more */
+    min-width: 350px; /* Minimum width before wrapping */
+}
+
+.product-title {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.product-rating {
+    color: #f39c12; /* Star color */
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.product-rating .far.fa-star {
+    color: #ccc; /* Unfilled star color */
+}
+
+.product-price {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.current-price {
+    font-size: 3em;
+    color: #e65100; /* Highlighted deal color */
+    font-weight: bold;
+}
+
+.old-price {
+    font-size: 1.5em;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discount-badge {
+    background-color: #27ae60; /* Green for discount */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.availability {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.in-stock {
+    color: #28a745; /* Green for in stock */
+    font-weight: bold;
+}
+
+.product-options {
+    margin-bottom: 30px;
+}
+
+.option-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.option-group label {
+    font-weight: bold;
+    color: #333;
+    min-width: 70px; /* Align labels */
+}
+
+.option-group select,
+.option-group input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #555;
+    flex-grow: 1; /* Allow inputs to take space */
+    max-width: 200px; /* Limit width */
+}
+
+.product-actions {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+}
+
+.large-btn { /* Reusing btn-add-to-cart or btn-primary */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    flex: 1; /* Allow buttons to grow */
+    min-width: 180px; /* Minimum width for buttons */
+    justify-content: center; /* Center content if using flex inside button */
+    display: flex; /* Make sure icons are aligned */
+    align-items: center;
+    gap: 10px;
+}
+
+.guarantees p {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.guarantees .fas {
+    color: #3498db;
+    font-size: 1.1em;
+}
+
+/* Tabs for Description/Specs/Reviews */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    outline: none;
+}
+
+.tab-button:hover {
+    color: #3498db;
+}
+
+.tab-button.active {
+    color: #3498db;
+    border-bottom-color: #3498db;
+}
+
+.tab-content {
+    padding: 20px 0;
+    line-height: 1.7;
+    color: #444;
+}
+
+.tab-content h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.tab-content p {
+    margin-bottom: 15px;
+}
+
+.tab-content ul {
+    list-style: disc; /* Default bullet points */
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.tab-content ul li {
+    margin-bottom: 8px;
+}
+
+.tab-content.hidden {
+    display: none;
+}
+
+/* Reviews Styling */
+.review-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.review-summary .product-rating {
+    font-size: 1.3em;
+}
+
+.customer-reviews .review-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+.review-rating {
+    color: #f39c12;
+}
+
+.review-date {
+    font-size: 0.85em;
+    color: #777;
+}
+
+.review-title {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.review-body {
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+/* Related Products Section (reusing product-grid styles) */
+.related-products-section {
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.related-products-section h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Reusing .product-grid and .product-card from index.html if they exist.
+   If not, copy those styles here for proper display. */
+
+
+/* Responsive Design for Product Page */
+@media (max-width: 992px) {
+    .product-details-section {
+        flex-direction: column; /* Stack image and info vertically */
+        gap: 30px;
+        align-items: center;
+    }
+    .product-image-gallery,
+    .product-info {
+        min-width: unset; /* Remove min-width constraints */
+        width: 100%; /* Take full width */
+        max-width: 500px; /* Constrain overall width of content blocks */
+    }
+    .product-title {
+        font-size: 2em;
+        text-align: center;
+    }
+    .product-price {
+        justify-content: center;
+    }
+    .product-options,
+    .product-actions,
+    .guarantees {
+        max-width: 400px; /* Limit width of options/buttons */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .product-actions {
+        flex-direction: column; /* Stack buttons */
+        gap: 10px;
+    }
+    .large-btn {
+        width: 100%;
+    }
+    .tabs {
+        justify-content: center;
+        flex-wrap: wrap; /* Allow tabs to wrap */
+    }
+    .tab-button {
+        padding: 12px 15px;
+        font-size: 1em;
+    }
+    .tab-content {
+        padding: 15px 0;
+    }
+    .related-products-section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-page-main {
+        padding: 15px;
+        margin: 15px auto;
+    }
+    .breadcrumb {
+        font-size: 0.85em;
+        padding-left: 0;
+        text-align: center;
+    }
+    .product-details-section {
+        gap: 20px;
+    }
+    .main-image img {
+        max-height: 300px;
+    }
+    .thumbnail-images img {
+        width: 60px;
+        height: 45px;
+    }
+    .product-title {
+        font-size: 1.8em;
+    }
+    .current-price {
+        font-size: 2.5em;
+    }
+    .old-price {
+        font-size: 1.2em;
+    }
+    .discount-badge {
+        font-size: 0.8em;
+    }
+    .large-btn {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+    .tab-content h3 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-details-section {
+        gap: 15px;
+    }
+    .product-title {
+        font-size: 1.5em;
+    }
+    .current-price {
+        font-size: 2em;
+    }
+    .old-price {
+        font-size: 1em;
+    }
+    .thumbnail-images {
+        gap: 5px;
+    }
+    .thumbnail-images img {
+        width: 50px;
+        height: 38px;
+    }
+    .option-group label {
+        min-width: 50px;
+    }
+    .option-group select,
+    .option-group input[type="number"] {
+        padding: 8px;
+    }
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab-button {
+        width: 100%;
+        text-align: center;
+        border-bottom: none; /* Remove individual tab borders */
+    }
+    .tab-button.active {
+        border-bottom: none; /* Active tab won't have a bottom border when stacked */
+        background-color: #f0f0f0; /* Highlight active tab with background */
+    }
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
